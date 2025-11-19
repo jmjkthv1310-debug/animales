@@ -1,8 +1,7 @@
-# api/serializers.py
 from rest_framework import serializers
+from .models import Pregunta
 
-class RegistroSerializer(serializers.Serializer):
-    porcentaje = serializers.FloatField()
-    peso = serializers.FloatField()
-    fecha = serializers.DateField()
-    hora = serializers.TimeField()
+class PreguntaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Pregunta
+        fields = '__all__'

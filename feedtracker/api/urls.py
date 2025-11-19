@@ -1,9 +1,10 @@
-# api/urls.py
 from django.urls import path
-from .views import RegistroListCreate, RegistroDetail, RegistroUltimo
+from . import views
 
 urlpatterns = [
-    path("registros/", RegistroListCreate.as_view(), name="registro-list-create"),
-    path("registros/<int:index>/", RegistroDetail.as_view(), name="registro-detail"),
-    path("registros/ultimo/", RegistroUltimo.as_view(), name="registro-ultimo"),
+    path('preguntas/', views.listar_preguntas),
+    path('preguntas/crear/', views.crear_pregunta),
+    path('preguntas/<int:id>/', views.obtener_pregunta),
+    path('preguntas/<int:id>/actualizar/', views.actualizar_pregunta),
+    path('preguntas/<int:id>/eliminar/', views.eliminar_pregunta),
 ]

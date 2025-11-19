@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-)+z4qi@i3m@9%3r(=-#tfi^5k&4bgf(u9vxu1v4hy$+iir*1@q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["feeddex-v1-1.onrender.com"]
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    "feeddex-v1-1.onrender.com"
+    ]
 
 
 # Application definition
