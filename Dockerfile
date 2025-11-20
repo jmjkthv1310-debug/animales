@@ -7,12 +7,15 @@ ENV PYTHONUNBUFFERED=1
 # ---- Crear directorio de trabajo ----
 WORKDIR /app
 
-# ---- Instalar dependencias del sistema ----
+# ---- Instalar dependencias del sistema necesarias para MySQL ----
 RUN apt-get update && apt-get install -y \
     build-essential \
     default-libmysqlclient-dev \
     pkg-config \
     && rm -rf /var/lib/apt/lists/*
+
+# ---- Actualizar pip ----
+RUN pip install --upgrade pip
 
 # ---- Copiar requerimientos ----
 COPY feedtracker/requirements.txt /app/requirements.txt
