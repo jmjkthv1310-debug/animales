@@ -1,0 +1,147 @@
+[
+  {
+    "model": "api.pregunta",
+    "pk": 1,
+    "fields": {
+      "pregunta": "¿Cuál es tu color favorito?",
+      "opcion1": "Rojo",
+      "opcion2": "Azul",
+      "opcion3": "Verde",
+      "opcion4": "Amarillo",
+      "respuesta": "Azul"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 2,
+    "fields": {
+      "pregunta": "¿Cuánto es 2 + 2?",
+      "opcion1": "3",
+      "opcion2": "4",
+      "opcion3": "5",
+      "opcion4": "22",
+      "respuesta": "4"
+    }
+  }
+,
+  {
+    "model": "api.pregunta",
+    "pk": 3,
+    "fields": {
+      "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+      "opcion1": "Tierra",
+      "opcion2": "Júpiter",
+      "opcion3": "Saturno",
+      "opcion4": "Marte",
+      "respuesta": "Júpiter"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 4,
+    "fields": {
+      "pregunta": "¿En qué continente se encuentra Egipto?",
+      "opcion1": "Asia",
+      "opcion2": "Europa",
+      "opcion3": "África",
+      "opcion4": "Oceanía",
+      "respuesta": "África"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 5,
+    "fields": {
+      "pregunta": "¿Cuántos corazones tiene un pulpo?",
+      "opcion1": "1",
+      "opcion2": "2",
+      "opcion3": "3",
+      "opcion4": "4",
+      "respuesta": "3"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 6,
+    "fields": {
+      "pregunta": "¿Cuál es el idioma más hablado del mundo?",
+      "opcion1": "Inglés",
+      "opcion2": "Chino mandarín",
+      "opcion3": "Hindú",
+      "opcion4": "Español",
+      "respuesta": "Chino mandarín"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 7,
+    "fields": {
+      "pregunta": "¿Qué país ganó el mundial de fútbol en 2018?",
+      "opcion1": "Alemania",
+      "opcion2": "Brasil",
+      "opcion3": "Francia",
+      "opcion4": "Argentina",
+      "respuesta": "Francia"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 8,
+    "fields": {
+      "pregunta": "¿Quién pintó la Mona Lisa?",
+      "opcion1": "Picasso",
+      "opcion2": "Leonardo da Vinci",
+      "opcion3": "Van Gogh",
+      "opcion4": "Miguel Ángel",
+      "respuesta": "Leonardo da Vinci"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 9,
+    "fields": {
+      "pregunta": "¿Cuántos lados tiene un hexágono?",
+      "opcion1": "5",
+      "opcion2": "6",
+      "opcion3": "7",
+      "opcion4": "8",
+      "respuesta": "6"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 10,
+    "fields": {
+      "pregunta": "¿Cuál es el metal más ligero?",
+      "opcion1": "Oro",
+      "opcion2": "Titanio",
+      "opcion3": "Litio",
+      "opcion4": "Aluminio",
+      "respuesta": "Litio"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 11,
+    "fields": {
+      "pregunta": "¿Qué animal es conocido como el rey de la selva?",
+      "opcion1": "Tigre",
+      "opcion2": "León",
+      "opcion3": "Elefante",
+      "opcion4": "Gorila",
+      "respuesta": "León"
+    }
+  },
+  {
+    "model": "api.pregunta",
+    "pk": 12,
+    "fields": {
+      "pregunta": "¿Cuál es el océano más grande?",
+      "opcion1": "Atlántico",
+      "opcion2": "Índico",
+      "opcion3": "Pacífico",
+      "opcion4": "Ártico",
+      "respuesta": "Pacífico"
+    }
+  }
+]

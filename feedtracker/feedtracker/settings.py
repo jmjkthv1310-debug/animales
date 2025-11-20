@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+from decouple import config
 
 from pathlib import Path
 
@@ -24,17 +25,25 @@ SECRET_KEY = 'django-insecure-)+z4qi@i3m@9%3r(=-#tfi^5k&4bgf(u9vxu1v4hy$+iir*1@q
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+CORS_ALLOWED_ORIGINS = [
+    "https://preguntas-77m0qmirl-erick949s-projects.vercel.app",
+    "http://localhost:5173",
+]
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    "feeddex-v1-1.onrender.com"
+    "*",
+    #'127.0.0.1',
+    'localhost'
+    #"feeddex-v1-1.onrender.com"
+   # '10.19.144.229'
     ]
 
 
 # Application definition
 
+
 INSTALLED_APPS = [
+    'corsheaders',
     'rest_framework',
     'api',
     'django.contrib.admin',
@@ -46,9 +55,11 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -72,7 +83,7 @@ TEMPLATES = [
         },
     },
 ]
-
+CORS_ALLOW_CREDENTIALS = True
 WSGI_APPLICATION = 'feedtracker.wsgi.application'
 
 
@@ -81,8 +92,18 @@ WSGI_APPLICATION = 'feedtracker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT', default='3306'),
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
+       # 'ENGINE': 'django.db.backends.sqlite3',
+       # 'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
