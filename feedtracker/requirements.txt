@@ -1,6 +1,10 @@
-Django
-gunicorn
-djangorestframework
+
 
 mysqlclient==2.2.7
 python-decouple==3.8
+
+Django==5.2.8
+djangorestframework==3.16.1
+mysqlclient==2.2.7
+django-cors-headers==4.3.0
+gunicorn==23.0.0
