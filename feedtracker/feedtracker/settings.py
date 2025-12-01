@@ -30,7 +30,7 @@ DEBUG = True   # recuerda poner en False en producción
 INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
-    'api',
+    'animales',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
